@@ -10,6 +10,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
+        <li>TypeScript</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>Java</li>
@@ -25,6 +26,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>ReactJS</li>
         <li>NextJS</li>
+        <li>FabricJS</li>
         <li>NodeJS</li>
         <li>MongoDB</li>
         <li>Git</li>
