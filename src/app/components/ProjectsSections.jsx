@@ -30,8 +30,8 @@ const projectsData = [
       'One page portfolio website using ReactJS, HTML, JavaScript, CSS, React-Icons.',
     image: '/images/portfolio.png',
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/ErezAmirav/portfolio',
+    previewUrl: 'https://erezamirav.github.io/portfolio/',
   },
 ];
 
