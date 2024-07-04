@@ -1,12 +1,12 @@
-'use client';
-import React, { useState, useTransition } from 'react';
-import Image from 'next/image';
-import TabButton from './TabButton';
+"use client";
+import React, { useState, useTransition } from "react";
+import Image from "next/image";
+import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: 'Skills',
-    id: 'skills',
+    title: "Skills",
+    id: "skills",
     content: (
       <ul className="list-disc pl-2">
         <li>TypeScript</li>
@@ -18,8 +18,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Frameworks',
-    id: 'frameworks',
+    title: "Frameworks",
+    id: "frameworks",
     content: (
       <ul className="list-disc pl-2">
         <li>NextJS</li>
@@ -32,8 +32,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Education',
-    id: 'education',
+    title: "Education",
+    id: "education",
     content: (
       <ul className="list-disc pl-2">
         <li>Computer Science Graduate (B.Sc.)</li>
@@ -43,7 +43,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState('skills');
+  const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -52,9 +52,15 @@ const AboutSection = () => {
     });
   };
   return (
-    <section id='about'>
+    <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} alt='about image'/>
+        <Image
+          src="/images/about-image.png"
+          width={500}
+          height={500}
+          alt="about image"
+          className="xl:block lg:block md:block xs:hidden"
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 mt-4">About Me</h2>
           <p className="text-[#ADB7BE] text-base sm:text-md mb-6 lg:text-md">
@@ -68,20 +74,20 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange('skills')}
-              active={tab === 'skills'}
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
             >
               Skills
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('frameworks')}
-              active={tab === 'frameworks'}
+              selectTab={() => handleTabChange("frameworks")}
+              active={tab === "frameworks"}
             >
               Frameworks
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange('education')}
-              active={tab === 'education'}
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
             >
               Education
             </TabButton>
