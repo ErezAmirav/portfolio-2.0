@@ -25,7 +25,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: 'Portfolio',
+    title: 'Portfolio 1.0',
     description:
       'One page portfolio website using ReactJS, HTML, JavaScript, CSS, React-Icons.',
     image: '/images/portfolio.png',

@@ -9,13 +9,11 @@ const TAB_DATA = [
     id: 'skills',
     content: (
       <ul className="list-disc pl-2">
-        <li>JavaScript</li>
         <li>TypeScript</li>
+        <li>JavaScript</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>Java</li>
-        <li>C</li>
-        <li>C++</li>
       </ul>
     ),
   },
@@ -24,8 +22,8 @@ const TAB_DATA = [
     id: 'frameworks',
     content: (
       <ul className="list-disc pl-2">
-        <li>ReactJS</li>
         <li>NextJS</li>
+        <li>ReactJS</li>
         <li>FabricJS</li>
         <li>NodeJS</li>
         <li>MongoDB</li>
@@ -56,14 +54,17 @@ const AboutSection = () => {
   return (
     <section id='about'>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.jpeg" width={500} height={500} alt='about image'/>
+        <Image src="/images/about-image.png" width={500} height={500} alt='about image'/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 mt-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            nisi dolores ratione minus at, atque nihil molestias dolor aliquam
-            distinctio quisquam ad. Dignissimos at dolorum qui quos maiores
-            veritatis laudantium.
+          <p className="text-[#ADB7BE] text-base sm:text-md mb-6 lg:text-md">
+            Computer Science Graduate (B.Sc.), Fullstack development
+            specialization. <br />
+            Skills: TypeScript, JavaScript, HTML, CSS, Java, C, C++.
+            <br />
+            Framework & Tools: NextJS, ReactJS, NodeJS, MongoDB, Git.
+            <br />
+            Ambitious, team player, love to challenge myself.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
