@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import Link from "next/link";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -40,14 +40,14 @@ const Footer = () => {
       <div className="flex justify-center gap-1 mb-14">
         <Link
           href="https://www.linkedin.com/in/erez-amirav/"
-          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818]"
+          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
           <FaLinkedin />
         </Link>
         <Link
           href="https://github.com/ErezAmirav"
-          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818]"
+          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
           <FaGithub />
