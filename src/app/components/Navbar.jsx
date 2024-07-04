@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="flex flex-wrap items-center justify-between mx-auto px-3 py-1">
         <Link
           href={'/'}
-          className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#949cbb] to-[#838ba7] font-semibold"
+          className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#949cbb] to-[#838ba7] font-semibold"
         >
           E.A
         </Link>
@@ -37,14 +37,14 @@ const Navbar = () => {
               onClick={() => setNavbarOpen(true)}
               className="flex items-center px-3 py-2 text-slate-200 hover:text-white"
             >
-              <Bars3Icon className="h-5 w-5" />
+              <Bars3Icon className="h-5 w-5 text-[#949cbb]" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
               className="flex items-center px-3 py-2 text-slate-200 hover:text-white"
             >
-              <XMarkIcon className="h-5 w-5" />
+              <XMarkIcon className="h-5 w-5 text-[#949cbb]" />
             </button>
           )}
         </div>
