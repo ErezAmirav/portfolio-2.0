@@ -66,10 +66,6 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-md mb-6 lg:text-md">
             Computer Science Graduate (B.Sc.), Fullstack development
             specialization. <br />
-            Skills: TypeScript, JavaScript, HTML, CSS, Java, C, C++.
-            <br />
-            Framework & Tools: NextJS, ReactJS, NodeJS, MongoDB, Git.
-            <br />
             Ambitious, team player, love to challenge myself.
           </p>
           <div className="flex flex-row justify-start mt-8">
