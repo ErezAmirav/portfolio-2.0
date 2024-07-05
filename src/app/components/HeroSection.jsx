@@ -19,6 +19,7 @@ const HeroSection = () => {
               sequence={["Erez Amirav", 1000, "A Frontend Developer", 1000]}
               wrapper="span"
               speed={50}
+              style={{ color: "white" }}
               repeat={Infinity}
             />
           </h1>
@@ -61,14 +62,14 @@ const HeroSection = () => {
               className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
-              <FaLinkedin />
+              <FaLinkedin className="text-white" />
             </Link>
             <Link
               href="https://github.com/ErezAmirav"
               className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
-              <FaGithub />
+              <FaGithub className="text-white" />
             </Link>
           </div>
         </div>

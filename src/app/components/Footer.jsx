@@ -5,10 +5,13 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="py-12 text-center text-sm mt-28">
-      <Link href="#" className="text-2xl font-semibold mb-8 inline-block">
+      <Link
+        href="#"
+        className="text-2xl font-semibold mb-8 inline-block text-white"
+      >
         Erez Amirav
       </Link>
-      <ul className="flex flex-wrap justify-center gap-2 mx-auto mb-12">
+      <ul className="flex flex-wrap justify-center gap-2 mx-auto mb-12 text-white">
         <li>
           <Link
             href="#"
@@ -25,9 +28,6 @@ const Footer = () => {
             About
           </Link>
         </li>
-        {/* <li>
-          <a href="#experience" className="p-2 rounded-lg flex border border-transparent">Experience</a>
-        </li> */}
         <li>
           <Link
             href="#contact"
@@ -43,17 +43,17 @@ const Footer = () => {
           className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
-          <FaLinkedin />
+          <FaLinkedin className="text-white" />
         </Link>
         <Link
           href="https://github.com/ErezAmirav"
           className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
-          <FaGithub />
+          <FaGithub className="text-white" />
         </Link>
       </div>
-      <div className="mb-16">
+      <div className="mb-16 text-white">
         <small>Erez Amirav &copy; {new Date().getFullYear()}</small>
       </div>
     </div>
