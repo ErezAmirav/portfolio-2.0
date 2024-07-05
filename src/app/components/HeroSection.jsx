@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left w-[90%] h-[70%]">
-          <h1 className="mb-4 text-2xl sm:text-xl lg:text-4xl md:text-4xl xl:text-6xl font-extrabold whitespace-nowrap">
+          <h1 className="mb-4 text-2xl sm:text-xl lg:text-4xl md:text-4xl xl:text-6xl font-extrabold whitespace-nowrap select-none">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600">
               Hello, I&apos;m
             </span>
@@ -46,11 +46,11 @@ const HeroSection = () => {
           </p> */}
         </div>
         <div className="col-span-5 place-self-center mt-10 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden border-2 border-[#414559]">
             <Image
               src="/images/me.png"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mt-10  rounded-b-full"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 mt-10  rounded-b-full pointer-events-none"
               width={300}
               height={300}
             />
@@ -58,14 +58,14 @@ const HeroSection = () => {
           <div className="flex justify-center gap-1 mt-5">
             <Link
               href="https://www.linkedin.com/in/erez-amirav/"
-              className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
+              className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
               <FaLinkedin />
             </Link>
             <Link
               href="https://github.com/ErezAmirav"
-              className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
+              className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
               <FaGithub />

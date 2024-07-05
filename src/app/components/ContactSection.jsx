@@ -11,7 +11,7 @@ const ContactSection = () => {
       <div className="grid md:grid-cols-3 gap-8 md-gap-12 text-center">
         <div></div>
         <Link href="mailto:erezamirav@gmail.com">
-          <div className="text-white rounded-xl mt-3 bg-[#181818] py-6 px-4 flex flex-col items-center hover:bg-[#232634]">
+          <div className="text-white rounded-xl mt-3 bg-[#181818] py-6 px-4 flex flex-col items-center border-2 border-[#414559] hover:bg-[#232634]">
             <MdOutlineMail className="text-2xl mb-2" />
             <h5 className="text-xl font-semibold mb-2">Email</h5>
             <p className="text-[#ADB7BE]">erezamirav@gmail.com</p>

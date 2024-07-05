@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-[#ADB7BE]">
         <li>TypeScript</li>
         <li>JavaScript</li>
         <li>HTML</li>
@@ -21,7 +21,7 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-[#ADB7BE]">
         <li>NextJS</li>
         <li>ReactJS</li>
         <li>FabricJS</li>
@@ -35,7 +35,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 text-[#ADB7BE]">
         <li>Computer Science Graduate (B.Sc.)</li>
       </ul>
     ),
@@ -59,14 +59,14 @@ const AboutSection = () => {
           width={500}
           height={500}
           alt="about image"
-          className="xl:block lg:block md:block xs:hidden"
+          className="xl:block lg:block md:block xs:hidden pointer-events-none"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 mt-4">About Me</h2>
           <p className="text-[#ADB7BE] text-base sm:text-md mb-6 lg:text-md">
-            Computer Science Graduate (B.Sc.), Fullstack development
-            specialization. <br />
-            Ambitious, team player, love to challenge myself.
+            Computer Science graduate (B.Sc.) specializing in Fullstack
+            development. Ambitious, collaborative, and driven by a passion for
+            tackling challenges and pushing boundaries in technology.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

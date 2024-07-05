@@ -1,33 +1,33 @@
-'use client';
-import React, { useState } from 'react';
-import Link from 'next/link';
-import NavLink from './NavLink';
-import MenuOverlay from './MenuOverlay';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import NavLink from "./NavLink";
+import MenuOverlay from "./MenuOverlay";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const navLinks = [
   {
-    title: 'About',
-    path: '#about',
+    title: "About",
+    path: "#about",
   },
   {
-    title: 'Projects',
-    path: '#projects',
+    title: "Projects",
+    path: "#projects",
   },
   {
-    title: 'Contact',
-    path: '#contact',
+    title: "Contact",
+    path: "#contact",
   },
 ];
 
-const Navbar = () => { 
+const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-6 left-[5vh] right-[5vh] z-10 bg-[#121212] border border-[#414559] rounded-xl">
+    <nav className="fixed top-4 left-[5vh] right-[5vh] z-10 bg-[#121212] border-2 border-[#414559] rounded-xl">
       <div className="flex flex-wrap items-center justify-between mx-auto px-3 py-1">
         <Link
-          href={'/'}
-          className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#949cbb] to-[#838ba7] font-semibold"
+          href={"/"}
+          className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#949cbb] to-[#838ba7] font-semibold select-none"
         >
           E.A
         </Link>

@@ -40,14 +40,14 @@ const Footer = () => {
       <div className="flex justify-center gap-1 mb-14">
         <Link
           href="https://www.linkedin.com/in/erez-amirav/"
-          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
+          className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
           <FaLinkedin />
         </Link>
         <Link
           href="https://github.com/ErezAmirav"
-          className="p-2 rounded-lg flex border border-transparent text-2xl bg-[#181818] hover:bg-[#303446]"
+          className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
           target="_blank"
         >
           <FaGithub />

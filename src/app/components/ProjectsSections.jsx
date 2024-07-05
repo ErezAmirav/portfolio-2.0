@@ -1,42 +1,42 @@
-'use client';
-import React, { useState } from 'react';
-import ProjectsCard from './ProjectsCard';
-import ProjectTag from './ProjectTag';
+"use client";
+import React, { useState } from "react";
+import ProjectsCard from "./ProjectsCard";
+import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
     id: 1,
-    title: 'Ecommerce',
+    title: "Ecommerce",
     description:
-      'An online shop frontend. Created with React & Material-UI components.',
-    image: '/images/ecommerce.png',
-    tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/ErezAmirav/ECommerce',
-    previewUrl: 'https://erezamirav.github.io/ecommerce/',
+      "An online shop frontend. Created with React & Material-UI components.",
+    image: "/images/ecommerce.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ErezAmirav/ECommerce",
+    previewUrl: "https://erezamirav.github.io/ecommerce/",
   },
   {
     id: 2,
-    title: 'MyWiki',
+    title: "MyWiki",
     description: `Alternative Wikipedia front page. Created with Wikipedia's API (MediaWiki), React & CSS.`,
-    image: '/images/mywiki.png',
-    tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/ErezAmirav/MyWiki',
-    previewUrl: 'https://erezamirav.github.io/mywiki/',
+    image: "/images/mywiki.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ErezAmirav/MyWiki",
+    previewUrl: "https://erezamirav.github.io/mywiki/",
   },
   {
     id: 3,
-    title: 'Portfolio 1.0',
+    title: "Portfolio 1.0",
     description:
-      'One page portfolio website using ReactJS, HTML, JavaScript, CSS, React-Icons.',
-    image: '/images/portfolio.png',
-    tag: ['All', 'Web'],
-    gitUrl: 'https://github.com/ErezAmirav/portfolio',
-    previewUrl: 'https://erezamirav.github.io/portfolio/',
+      "One page portfolio website using ReactJS, HTML, JavaScript, CSS, React-Icons.",
+    image: "/images/portfolio.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ErezAmirav/portfolio",
+    previewUrl: "https://erezamirav.github.io/portfolio/",
   },
 ];
 
 const ProjectsSections = () => {
-  const [activeTag, setActiveTag] = useState('All');
+  const [activeTag, setActiveTag] = useState("All");
   const handleTagChange = (newTag) => {
     setActiveTag(newTag);
   };
