@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="fixed top-4 left-[5vh] right-[5vh] z-10 bg-[#121212] border-2 border-[#414559] rounded-xl">
       <div className="flex flex-wrap items-center justify-between mx-auto px-3 py-1">
         <Link
-          href={"/"}
+          href={"#hero"}
           className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#949cbb] to-[#838ba7] font-semibold select-none"
         >
           E.A

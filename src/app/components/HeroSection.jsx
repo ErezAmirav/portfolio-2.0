@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section>
+    <section id="#hero">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left w-[90%] h-[70%]">
           <h1 className="mb-4 text-2xl sm:text-xl lg:text-4xl md:text-4xl xl:text-6xl font-extrabold whitespace-nowrap select-none">
