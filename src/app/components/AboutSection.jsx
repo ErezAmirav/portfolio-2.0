@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2 text-[#ADB7BE]">
+      <ul className="list-inside list-image-[url(/images/arrow.png)] pl-2 text-[#ADB7BE]">
         <li>TypeScript</li>
         <li>JavaScript</li>
         <li>HTML</li>
@@ -21,13 +21,27 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul className="list-disc pl-2 text-[#ADB7BE]">
+      <ul className="list-inside grid grid-cols-2 list-image-[url(/images/arrow.png)] pl-2 text-[#ADB7BE]">
         <li>NextJS</li>
         <li>ReactJS</li>
         <li>FabricJS</li>
         <li>NodeJS</li>
         <li>MongoDB</li>
+        <li>TailwindCSS</li>
+        <li>MUI</li>
+        <li>FetchAPI</li>
+        <li>Redux</li>
+        <li>Wordpress</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Tools",
+    id: "tools",
+    content: (
+      <ul className="list-inside list-image-[url(/images/arrow.png)] pl-2 text-[#ADB7BE]">
         <li>Git</li>
+        <li>DevTools</li>
       </ul>
     ),
   },
@@ -35,7 +49,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2 text-[#ADB7BE]">
+      <ul className="list-inside list-image-[url(/images/arrow.png)] pl-2 text-[#ADB7BE]">
         <li>Computer Science Graduate (B.Sc.)</li>
       </ul>
     ),
@@ -68,7 +82,7 @@ const AboutSection = () => {
             development. Ambitious, collaborative, and driven by a passion for
             tackling challenges and pushing boundaries in technology.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row md:justify-start xs:justify-center mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -80,6 +94,12 @@ const AboutSection = () => {
               active={tab === "frameworks"}
             >
               Frameworks
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("tools")}
+              active={tab === "tools"}
+            >
+              Tools
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}

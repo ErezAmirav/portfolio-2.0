@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <section id="#hero">
+    <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left w-[90%] h-[70%]">
           <h1 className="mb-4 text-2xl sm:text-xl lg:text-4xl md:text-4xl xl:text-6xl font-extrabold whitespace-nowrap select-none">
@@ -29,7 +29,7 @@ const HeroSection = () => {
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-600 to-cyan-500 hover:bg-slate-800 text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <a href="/cv.pdf" download>
+                <a href="/Erez Amirav - CV.pdf" download>
                   Download CV
                 </a>
               </span>
