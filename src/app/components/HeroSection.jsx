@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <section id="#">
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left w-[90%] h-[70%]">
+        <div className="col-span-7 place-self-center text-center sm:text-left w-[90%] h-[70%] animate-slide-from-left">
           <h1 className="mb-4 text-2xl sm:text-xl lg:text-4xl md:text-4xl xl:text-6xl font-extrabold whitespace-nowrap select-none">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-600">
               Hello, I&apos;m
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </p> */}
         </div>
         <div className="col-span-5 place-self-center mt-10 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden border-[3px] border-[#414559]">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden border-[3px] border-[#414559] animate-fade-in">
             <Image
               src="/images/me.png"
               alt="hero image"

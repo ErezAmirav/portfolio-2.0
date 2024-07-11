@@ -23,7 +23,7 @@ const navLinks = [
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-4 left-[5vh] right-[5vh] z-10 bg-[#121212] border-2 border-[#414559] rounded-xl">
+    <nav className="fixed top-4 left-[5vh] right-[5vh] z-10 bg-[#121212] border-2 border-[#414559] rounded-xl animate-slide-in-slow">
       <div className="flex flex-wrap items-center justify-between mx-auto px-3 py-1">
         <Link
           href={"#"}
