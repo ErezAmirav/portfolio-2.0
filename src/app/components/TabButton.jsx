@@ -8,7 +8,7 @@ const TabButton = ({ active, selectTab, children }) => {
         {children}
       </p>
       {active ? (
-        <div className="h-[0.1rem] -mt-[0.2rem] bg-purple-500 mr-3 animate-slide-in"></div>
+        <div className="h-[0.1rem] -mt-[0.2rem] bg-purple-500 mr-3 animate-slide-in" />
       ) : (
         ""
       )}

@@ -56,17 +56,17 @@ const HeroSection = () => {
               height={300}
             />
           </div>
-          <div className="flex justify-center gap-1 mt-5">
+          <div className="flex justify-center gap-2 mt-5">
             <Link
               href="https://www.linkedin.com/in/erez-amirav/"
-              className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
+              className="p-2 rounded-lg flex border-2 border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
               <FaLinkedin className="text-white" />
             </Link>
             <Link
               href="https://github.com/ErezAmirav"
-              className="p-2 rounded-lg flex border border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
+              className="p-2 rounded-lg flex border-2 border-[#414559] text-2xl bg-[#181818] hover:bg-[#303446]"
               target="_blank"
             >
               <FaGithub className="text-white" />

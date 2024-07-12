@@ -80,7 +80,7 @@ const AboutSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-md mb-6 lg:text-md">
             Computer Science graduate (B.Sc.) specializing in Fullstack
             development. Ambitious, collaborative, and driven by a passion for
-            tackling challenges and pushing boundaries in technology.
+            tackling challenges and pushing boundaries.
           </p>
           <div className="flex flex-row md:justify-start xs:justify-center mt-8">
             <TabButton
