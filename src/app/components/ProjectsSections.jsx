@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import ProjectsCard from "./ProjectsCard";
 import ProjectTag from "./ProjectTag";
 
@@ -45,9 +46,15 @@ const ProjectsSections = () => {
   );
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md-mb-12">
+      <motion.h2
+        className="text-center text-4xl font-bold text-white mt-4 mb-8 md-mb-12"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
         My Projects
-      </h2>
+      </motion.h2>
       {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
@@ -66,15 +73,24 @@ const ProjectsSections = () => {
         />
       </div> */}
       <div className="grid md:grid-cols-3 gap-8 md-gap-12">
-        {projectsData.map((project) => (
-          <ProjectsCard
+        {projectsData.map((project, index) => (
+          <motion.div
             key={project.id}
-            title={project.title}
-            imgUrl={project.image}
-            description={project.description}
-            gitUrl={project.gitUrl}
-            previewUrl={project.previewUrl}
-          />
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: index * 0.2 }}
+            className="h-full"
+          >
+            <ProjectsCard
+              title={project.title}
+              imgUrl={project.image}
+              description={project.description}
+              gitUrl={project.gitUrl}
+              previewUrl={project.previewUrl}
+              className="h-full"
+            />
+          </motion.div>
         ))}
       </div>
     </section>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   {
@@ -58,7 +59,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      <AnimatePresence>
+        {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      </AnimatePresence>
     </nav>
   );
 };

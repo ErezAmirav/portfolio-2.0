@@ -2,6 +2,7 @@
 import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import { motion, AnimatePresence } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -65,6 +66,7 @@ const AboutSection = () => {
       setTab(id);
     });
   };
+
   return (
     <section id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -108,8 +110,19 @@ const AboutSection = () => {
               Education
             </TabButton>
           </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+          <div className="mt-8 relative h-48">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={tab}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="absolute w-full"
+              >
+                {TAB_DATA.find((t) => t.id === tab).content}
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>
