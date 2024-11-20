@@ -19,10 +19,11 @@ export default function Home() {
       className="flex min-h-screen flex-col bg-[#121212]"
       style={{
         // backgroundImage: `url('images/bg-overlay2.png')`,
-        backgroundImage: `url('images/bg-side.png')`,
-        backgroundPosition: "bottom left",
+        backgroundImage: `url('images/asd.png')`,
+        backgroundPosition: "left",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
+        backgroundSize: window.innerWidth < 768 ? "35%" : "auto",
+        backgroundAttachment: window.innerWidth < 768 ? "fixed" : "scroll",
       }}
     >
       <Navbar />
