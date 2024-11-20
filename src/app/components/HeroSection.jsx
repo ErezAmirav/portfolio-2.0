@@ -19,7 +19,11 @@ const HeroSection = () => {
               sequence={["Erez Amirav", 1000, "A Frontend Developer", 1000]}
               wrapper="span"
               speed={50}
-              style={{ color: "white" }}
+              style={{
+                color: "white",
+                WebkitTextStroke: "1px rgba(0, 0, 0, 0.1)",
+                textShadow: "1px 0 0 rgba(0, 0, 0, 0.4)"
+              }}
               repeat={Infinity}
             />
           </h1>

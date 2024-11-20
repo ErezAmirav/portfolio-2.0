@@ -18,14 +18,15 @@ export default function Home() {
     <main
       className="flex min-h-screen flex-col bg-[#121212]"
       style={{
-        backgroundImage: `url('images/bg-overlay2.png')`,
+        // backgroundImage: `url('images/bg-overlay2.png')`,
+        backgroundImage: `url('images/bg-side.png')`,
         backgroundPosition: "bottom left",
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
       }}
     >
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-12 pt-4">
         <motion.div
           initial="hidden"
           whileInView="visible"
