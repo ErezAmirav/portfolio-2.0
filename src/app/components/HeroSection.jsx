@@ -23,7 +23,7 @@ const HeroSection = () => {
             className="mb-8"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="block text-white mb-2">Hi, I'm</span>
+              <span className="block text-white mb-2">Hi, I&apos;m</span>
               <span className="gradient-text">Erez Amirav</span>
             </h1>
 
