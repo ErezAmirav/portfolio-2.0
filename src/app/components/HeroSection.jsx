@@ -10,14 +10,12 @@ const HeroSection = () => {
   return (
     <section
       id="#"
-      className="relative min-h-screen flex items-center justify-center pt-24"
+      className="relative min-h-screen flex items-center justify-center pt-28"
     >
-      {/* Background Grid Pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20"></div>
 
       <div className="container-custom relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Main Heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,11 +32,11 @@ const HeroSection = () => {
                 sequence={[
                   "Frontend Developer",
                   2000,
-                  "React Specialist",
-                  2000,
-                  "UI/UX Enthusiast",
+                  "Next.js Specialist",
                   2000,
                   "Problem Solver",
+                  2000,
+                  "UI/UX Enthusiast",
                   2000,
                 ]}
                 wrapper="span"
@@ -49,19 +47,25 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Description */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-12 leading-relaxed"
           >
-            Computer Science graduate specializing in modern web development. I
-            build exceptional digital experiences with clean code and innovative
-            solutions.
+            Frontend Developer at{" "}
+            <a
+              href="https://www.linkedin.com/company/ersona"
+              target="_blank"
+              className="text-indigo-400 hover:text-indigo-300 transition-colors duration-200"
+            >
+              Ersona
+            </a>
+            , building AI-powered solutions for customer support and sales
+            automation. Computer Science graduate passionate about creating
+            exceptional digital experiences with modern web technologies.
           </motion.p>
 
-          {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,7 +90,6 @@ const HeroSection = () => {
             </Link>
           </motion.div>
 
-          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -100,17 +103,12 @@ const HeroSection = () => {
                   alt="Erez Amirav"
                   width={256}
                   height={256}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover bg-gradient-to-r from-indigo-700 via-purple-700 to-indigo-700 opacity-75 pointer-events-none"
                 />
-              </div>
-              {/* Gradient Ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 p-1 opacity-75">
-                <div className="w-full h-full rounded-full bg-[var(--background)]"></div>
               </div>
             </div>
           </motion.div>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

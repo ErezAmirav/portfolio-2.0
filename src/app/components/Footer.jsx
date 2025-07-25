@@ -32,9 +32,7 @@ const Footer = () => {
   return (
     <footer className=" bg-gradient-to-b from-transparent to-black/20">
       <div className="container-custom py-16">
-        {/* Main Footer Content */}
         <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Brand Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,9 +47,16 @@ const Footer = () => {
               Erez Amirav
             </Link>
             <p className="text-white/70 leading-relaxed mb-6 max-w-md">
-              Frontend Developer passionate about creating exceptional digital
-              experiences with modern web technologies and clean, efficient
-              code.
+              Frontend Developer at{" "}
+              <a
+                href="https://www.linkedin.com/company/ersona"
+                target="_blank"
+                className="text-indigo-400 hover:text-indigo-300 transition-colors duration-200"
+              >
+                Ersona
+              </a>
+              , building AI-powered solutions for customer support and sales
+              automation with modern web technologies.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -70,7 +75,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -92,7 +96,6 @@ const Footer = () => {
             </ul>
           </motion.div>
 
-          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -108,25 +111,23 @@ const Footer = () => {
                 erezamirav@gmail.com
               </Link>
               <p className="text-white/70">Israel</p>
-              <p className="text-white/70">Available for opportunities</p>
+              <p className="text-white/70">Frontend Developer @ Ersona</p>
             </div>
           </motion.div>
         </div>
 
-        {/* Bottom Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center"
+          className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center mb-6"
         >
           <div className="flex items-center space-x-2 text-white/60 mb-4 md:mb-0">
             <span>Erez Amirav</span>
             <span>© {new Date().getFullYear()}</span>
           </div>
 
-          {/* Back to Top Button */}
           <button
             onClick={scrollToTop}
             className="p-3 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-white/20 transition-all duration-200 group"

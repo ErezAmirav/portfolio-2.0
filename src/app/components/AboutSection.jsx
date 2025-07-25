@@ -43,6 +43,7 @@ const SKILLS_DATA = [
       { name: "Git", level: 90 },
       // { name: "VS Code", level: 95 },
       { name: "DevTools", level: 85 },
+      { name: "Jira", level: 80 },
       // { name: "Figma", level: 75 },
       // { name: "Docker", level: 70 },
     ],
@@ -85,14 +86,22 @@ const AboutSection = () => {
             <span className="gradient-text">About Me</span>
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Passionate Computer Science graduate with expertise in modern web
-            development. I create exceptional digital experiences through clean
-            code, innovative solutions, and collaborative teamwork.
+            Frontend Developer at{" "}
+            <a
+              href="https://www.linkedin.com/company/ersona"
+              target="_blank"
+              className="text-indigo-400 hover:text-indigo-300 transition-colors duration-200"
+            >
+              Ersona
+            </a>
+            , where I build AI-powered solutions for customer support and sales
+            automation. Computer Science graduate passionate about creating
+            exceptional digital experiences through clean code and innovative
+            web technologies.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left Column - Image and Stats */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -100,34 +109,30 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            {/* Professional Image */}
             <div className="card text-center">
-              <div className="relative w-64 h-64 mx-auto mb-6">
+              <div className="relative w-[20rem] h-[20rem] mx-auto mb-6">
                 <Image
                   src="/images/about-image.png"
-                  width={256}
-                  height={256}
+                  width={500}
+                  height={500}
                   alt="About Erez Amirav"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-lg"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-lg"></div> */}
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">
                 Erez Amirav
               </h3>
-              <p className="text-white/70 mb-4">
-                Frontend Developer & Problem Solver
-              </p>
+              <p className="text-white/70 mb-4">Frontend Developer @ Ersona</p>
               <div className="flex justify-center space-x-4 text-sm text-white/60">
                 <span>📍 Israel</span>
                 <span className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full" />
-                  Available for Work
+                  <div className="w-2 h-2 bg-blue-500 rounded-full" />
+                  Currently at Ersona
                 </span>
               </div>
             </div>
 
-            {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="card text-center">
                 <div className="text-3xl font-bold gradient-text mb-2">3+</div>
@@ -140,7 +145,6 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          {/* Right Column - Skills */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -148,7 +152,6 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-8"
           >
-            {/* Tab Navigation */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
               {SKILLS_DATA.map((tab) => (
                 <button
@@ -166,7 +169,6 @@ const AboutSection = () => {
               ))}
             </div>
 
-            {/* Skills Content */}
             <div className="card min-h-[300px]">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -217,7 +219,6 @@ const AboutSection = () => {
               </AnimatePresence>
             </div>
 
-            {/* CTA */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
