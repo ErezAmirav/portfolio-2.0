@@ -56,7 +56,7 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Let's Connect</span>
+            <span className="gradient-text">Let&apos;s Connect</span>
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
             Currently building AI-powered solutions at{" "}
@@ -176,7 +176,7 @@ const ContactSection = () => {
                 </h3>
                 <p className="text-white/70 mb-8 leading-relaxed">
                   Whether you have a specific project in mind or just want to
-                  explore possibilities, I'd love to hear from you. Let's
+                  explore possibilities, I&apos;d love to hear from you. Let&apos;s
                   discuss how we can work together.
                 </p>
               </div>

@@ -230,7 +230,7 @@ const AboutSection = () => {
                 href="#contact"
                 className="btn-primary group inline-flex items-center px-8 py-4 text-lg font-semibold"
               >
-                Let's Work Together
+                Let&apos;s Work Together
                 <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </a>
             </motion.div>
